@@ -1,0 +1,13 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:sharedUserId="com.example.test">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application>
+        <activity android:name="com.example.mitsogosample.DashboardActivity"></activity>
+
+        <service
+            android:name="com.example.mitsogosample.MyJobIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+</manifest>
